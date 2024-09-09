@@ -11,6 +11,52 @@
     },
     {
         "courseId": "C102",
-        "title":
+        "title": "Advanced JavaScript Concepts",
+        "instructor": "Jane Smith",
+        "duration": "15 hours",
+        "rating": 4.8,
+        "category": "Web Development",
+        "price": "$75",
+        "enrolled": 3200
+    },
+    {
+        "courseId": "C103",
+        "title": "Data Science with Python",
+        "instructor": "Michael Brown",
+        "duration": "20 hours",
+        "rating": 4.6,
+        "category": "Data Science",
+        "price": "$100",
+        "enrolled": 1800
+    },
+    {
+        "courseId": "C104",
+        "title": "Machine Learning A-Z",
+        "instructor": "Sarah Johnson",
+        "duration": "25 hours",
+        "rating": 4.9,
+        "category": "Artificial Intelligence",
+        "price": "$120",
+        "enrolled": 4000
+    },
+    {
+        "courseId": "C105",
+        "title": "UI/UX Design for Beginners",
+        "instructor": "Emily Davis",
+        "duration": "12 hours",
+        "rating": 4.7,
+        "category": "Design",
+        "price": "$60",
+        "enrolled": 1500
+    },
+    {
+        "courseId": "C106",
+        "title": "Cybersecurity Fundamentals",
+        "instructor": "Robert Wilson",
+        "duration": "18 hours",
+        "rating": 4.4,
+        "category": "Cybersecurity",
+        "price": "$90",
+        "enrolled": 2200
     }
 ]
