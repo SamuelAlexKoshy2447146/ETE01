@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.course {
+    flex: 0 0 auto;
+    /* width: 50%; */
+    border: black solid 3px;
+    margin: 2px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.author {
+    font-style: italic;
+}
+
+.genre {
+    text-decoration: underline;
+}
+
+#sortCriteria {
+    margin-bottom: 10%;
+}
+
+.pagination-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+.pagination-controls button {
+    margin: 0 5px;
+}

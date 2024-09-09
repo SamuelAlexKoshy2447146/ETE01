@@ -4,8 +4,92 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Online Courses</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        
+        <div class="flex" style="padding-top: 50px">
+            <div class="container-md" style="width: 10%; margin-left: 5%">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="title"
+                        placeholder="Title"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="instructor" class="form-label"
+                        >Instructor</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="instructor"
+                        placeholder="instructor"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="category"
+                        placeholder="category"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="rating"
+                        placeholder="rating"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="duration" class="form-label">Duration</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="duration"
+                        placeholder="duration"
+                    />
+                </div>
+                <select id="sortCriteria">
+                    <option value="">Sort by...</option>
+                    <option value="title">Title</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="category">Category</option>
+                    <option value="rating">Rating</option>
+                    <option value="duration">Duration</option>
+                    <option value="price">Price</option>
+                </select>
+                <button onclick="search()">Search</button>
+            </div>
+
+            <div id="book-list" class="container grid" style="width: 80%">
+                <div class="row" id="row"></div>
+
+                <div class="pagination-controls">
+                    <button id="prevPage" onclick="changePage(-1)">
+                        Previous
+                    </button>
+                    <button id="nextPage" onclick="changePage(1)">Next</button>
+                </div>
+            </div>
+        </div>
+        <script src="./api.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
